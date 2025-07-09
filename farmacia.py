@@ -31,10 +31,11 @@ while True:
                     print("No hay medicamentos registrados.")
                 else:
                     i = 1
-                    print("\n--- LISTA DE MEDICAMENTOS ---")
+                    print("-- LISTA DE MEDICAMENTOS ---")
                     for med in medicamento:
                         print(f"{i}. {med}")
                         i += 1
+                        print("-------------------------")
 
             case 4:
                 print("Gracias por usar el sistema de farmacia")
