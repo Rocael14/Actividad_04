@@ -4,7 +4,7 @@ def MenuMedicamento():
     print("3. Mostrar Medicamentos")
     print("4. Salir")
 
-
+medicamento = []
 while True:
     MenuMedicamento()
     try:
@@ -12,6 +12,9 @@ while True:
         match opcion:
             case 1:
                 print("Agregar Medicamento")
+                nombre = input("Ingrese el nombre del medicamento: ").strip().capitalize()
+                medicamento.append(nombre)
+                print(f"¡{nombre} agregado a la lista!")
             case 2:
                 print("Entregar Medicamento")
             case 3:
