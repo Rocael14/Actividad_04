@@ -27,7 +27,14 @@ while True:
                 else:
                     print(f"{nombre_entregar} no encontrado en la lista.")
             case 3:
-                print("Mostrar Medicamentos")
+                if not medicamento:
+                    print("No hay medicamentos registrados.")
+                else:
+                    i = 1
+                    print("\n--- LISTA DE MEDICAMENTOS ---")
+                    for med in medicamento:
+                        print(f"{i}. {med}")
+                        i += 1
 
             case 4:
                 print("Gracias por usar el sistema de farmacia")
